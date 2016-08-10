@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Generic Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generic Survey</h1>
+      <div id="blanks">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <h5>What is your favorite food?</h5>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="American" checked>
+            American
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="Mexican">
+            Mexican
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="Chinese">
+            Chinese
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="Italian">
+            Italian
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="Indian">
+            Indian
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+
+        <h5>What is your favorite genre of music?</h5>
+        <select class="form-control" id="music">
+          <option>Rock</option>
+          <option>Country</option>
+          <option>Classical</option>
+          <option>Jazz</option>
+        </select>
+
+      <button type="submit" class="btn">SUBMIT</button>
+      </form>
+    </div>
+      <div id="output">
+        <p>Your name is <span class="name"></span>!</p>
+        <p>Your favorite food is <span class="food"></span>.</p>
+        <p>Your favorite color is <span class="color"></span>.</p>
+        <p>Your favorite genre of music is <span class="music"></span>.</p>
+      </div>
+
+<!-- javascript only below this point -->
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
